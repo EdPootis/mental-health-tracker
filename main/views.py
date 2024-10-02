@@ -133,5 +133,7 @@ def add_mood_entry_ajax(request):
         mood_intensity = mood_intensity,
         user = user
     )
+    # if new_mood.is_valid():
+    new_mood.save()
 
     return HttpResponse(b"CREATED", status=201)

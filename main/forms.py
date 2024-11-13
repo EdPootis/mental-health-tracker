@@ -14,4 +14,3 @@ class MoodEntryForm(ModelForm):
     def clean_feelings(self):
         feelings = self.cleaned_data["feelings"]
         return strip_tags(feelings)
-        
